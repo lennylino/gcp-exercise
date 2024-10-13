@@ -50,3 +50,16 @@ resource "google_compute_subnetwork" "subnet" {
   region        = "us-central1"
     network     = "vpclino"
 }
+resource "google_compute_subnetwork" "subnet" {
+  name          = "subnet1"
+  ip_cidr_range = "10.0.0.0/24"
+  region        = "us-central1"
+  network       = "vpclino"
+}
+
+ resource "google_compute_subnetwork" "subnet-02" {
+   name          = "subnet2"
+   ip_cidr_range = "10.0.2.0/24"
+   region        = "europe-west10"
+   network       = "vpclino"
+}

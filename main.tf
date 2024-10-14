@@ -11,7 +11,7 @@ terraform {
  provider "google" {
   project = "project-lino-433318"
   region  = "us-central1"
-  credentials = file("project-lino-433318-f9d2ebc05e57.json")
+  credentials = file("")
  }
 
  resource "google_compute_instance" "lino-vm1" {

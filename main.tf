@@ -58,13 +58,8 @@ resource "google_compute_subnetwork" "subnet" {
    network       = "vpclino"
 }
 
-provider "google" {
-  project = "project-lino-433318"
-  region = "us-central1"
-}
-
 resource "google_storage_bucket" "my_bucket" {
-    name = "bucket-lino"
+    name = "bucket-lino-unique"
     location = "us"
     storage_class = "standard"
 }

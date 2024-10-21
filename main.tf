@@ -34,11 +34,6 @@ terraform {
   }
  }
 
-provider "google" {
-  project = "project-lino-433318"
-  region  = "us-central1"
-}
-
 resource "google_compute_network" "vpc_network" {
   name                    = "vpclino"
   auto_create_subnetworks = false
